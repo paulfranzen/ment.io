@@ -829,7 +829,7 @@ angular.module('mentio')
                 }
             }
             var effectiveRange = getTextPrecedingCurrentSelection();
-            if (effectiveRange !== undefined && effectiveRange !== null) {
+            if (effectiveRange !== undefined && effectiveRange !== null && triggerCharSet !== undefined) {
                 var mostRecentTriggerCharPos = -1;
                 var triggerChar;
                 triggerCharSet.forEach(function(c) {
